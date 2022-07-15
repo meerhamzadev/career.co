@@ -18,10 +18,7 @@ function AuthMobile() {
         }
         try {
             const q = query(collectionRef, where('email', '==', email));
-            console.log(q);
             const snapshot = await getDocs(q);
-            // , async (snapshot) => {
-            console.log(snapshot);
 
             if (snapshot.docs.length === 0) {
                 await addDoc(collectionRef, {

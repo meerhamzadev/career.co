@@ -1,13 +1,10 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom';
 import Logo from './ReusableComponents/Logo';
 
 function Home() {
-    const navigate = useNavigate();
     const logOut = () => {
         window.localStorage.setItem('state', false);
-        console.log(window.localStorage.getItem('state'));
-        navigate('/')
+        window.open('/', "_self");
     }
     return (
         <section className='h-screen py-12 flex flex-col justify-between items-center' >

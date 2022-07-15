@@ -11,7 +11,7 @@ function App() {
   return (
     <BrowserRouter>
       {
-        window.localStorage.getItem('state') === true ?
+        window.localStorage.getItem('state') === "true" ?
           (
             <>
               {console.log("enter")}
