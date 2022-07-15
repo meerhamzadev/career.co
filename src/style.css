@@ -1,0 +1,7 @@
+.btn {
+    @apply rounded-2xl bg-[#1918ff] text-white font-semibold text-base p-2 w-24
+}
+
+.inputStyle {
+    @apply p-2 w-3/4 border-[1px] border-[#353333] rounded-2xl
+}   
